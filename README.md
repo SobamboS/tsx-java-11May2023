@@ -1,24 +1,8 @@
-# tsx-java-11May2023
-GitHub API and Webhook Integration using Spring Boot
 
-#   Implementing-Github-Api-
+# Github API and Webhook Integration using Spring Boot
 
-This project is to implement Github api in my springboot project.
+This is a Spring Boot application that integrates with the Github API and implements webhooks to track changes in a Github account.
 
-**Get Started**
-
-A. **Create a Token** 
-1. Go to setting on your Github profile
-2. Scroll down and click on **Developer Setting** 
-3. Click on create **Personal access token** then click on *Generate new token 
-4. Then copy it because you won't be able to retrieve it once it's gone.
-
-B. **Declare your personal token in your project either in your application. properties or .env file and your username**
-
-C. **Run the application and check localhost:8080 on your browser** 
-
-**Implemented Api **
-listCommit :- This is to get the list of commits in the repository and logging it 
 
 - **Requirements:**
     - Java 8 or above
@@ -26,5 +10,28 @@ listCommit :- This is to get the list of commits in the repository and logging i
     - Gradle building script
     - Github API
 
+## Getting Started
 
-**Port : 8080**
+To run the application, you will need to have Java 8 or above installed on your machine.
+
+Clone the repository:
+
+git clone https://github.com/SobamboS/tsx-java-11May2023.git
+
+
+The application should now be running on port 8080.
+
+## Webhooks
+
+To set up webhooks, you will need to use NGROK to create a tunnel to your local machine. Follow the instructions in this video: https://www.youtube.com/watch?v=DCxt9SAnkyc
+
+Once you have NGROK running, you can create a webhook in your Github account that points to the NGROK URL. The webhook should be set up to track push, pull, and merge events.
+
+## Logging
+
+The application uses logback for logging. The log level is set to INFO by default, but you can change this in the `log4j2.xml` file and the logs are saved in a application.log file
+
+## Conclusion
+
+You should now have a fully functional Spring Boot application that integrates with the Github API.
+
