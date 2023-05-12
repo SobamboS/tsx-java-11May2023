@@ -1,10 +1,11 @@
 package com.tsxjava.tsx.service;
 
+import ch.qos.logback.classic.Logger;
+import org.slf4j.LoggerFactory;
 import com.tsxjava.tsx.model.Commit;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +19,7 @@ import java.util.List;
 @Service
 @Component
 public  class CommitServiceImpl implements CommitService{
-    private static final Logger logger = LoggerFactory.getLogger(CommitService.class);
+    private static final Logger logger =(Logger) LoggerFactory.getLogger(CommitServiceImpl.class);
 
 
    @Override
