@@ -44,6 +44,8 @@ dependencies {
 
 	implementation 'ch.qos.logback:logback-classic:1.4.6'
 	implementation 'org.springframework.boot:spring-boot-starter-logging'
+	implementation 'io.github.cdimascio:java-dotenv:5.2.2'
+
 
 
 

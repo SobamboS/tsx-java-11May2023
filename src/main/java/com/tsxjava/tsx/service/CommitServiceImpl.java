@@ -28,7 +28,7 @@ public  class CommitServiceImpl implements CommitService{
                 .build();
 
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("https://api.github.com/repos/" + commit1.getUsername() + "/dummy-github-events/commits"))
+                .uri(URI.create("https://api.github.com/repos/" + commit1.getUsername() + "/dummy-github-events" + "/commits"))
                 .GET()
                 .header("Accept", "application/vnd.github.v3+json")
                 .header("Authorization", "token " + commit1.getToken())
